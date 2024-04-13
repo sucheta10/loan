@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Loan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+ 
+
+</head>
+<body>
+<nav class="bg-white">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center space-x-2">
+          
+          <span class="text-black text-xl font-bold">
+            <i>RapidCredit</i>
+        </span>
+        </a>
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-black px-3 py-2 hover:text-gray-200">Dashboards</a>
+                <a href="#" class="text-black px-3 py-2 hover:text-gray-200">Loan Applications</a> 
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+<div class="bg-zinc-100 dark:bg-zinc-800 p-8">
+  <div class="container mx-auto bg-white dark:bg-zinc-700 shadow rounded-lg p-6">
+    <h1 class="text-2xl font-semibold mb-6">CREATE LOAN DETAILS:</h1>
+    <form>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="first-name">First Name *</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="first-name" type="text" placeholder="Add first name">
+        </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="middle-name">Middle Name</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="middle-name" type="text" placeholder="Add middle name">
+        </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="last-name">Last Name *</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="last-name" type="text" placeholder="Add last name">
+        </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="aadhar-no">AADHAR NO *</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="aadhar-no" type="text" placeholder="Add Aadhar No">
+        </div>
+        <div class="mb-4">
+            <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="aadhar-no">PAN NO *</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="pan-no" type="text" placeholder="Add PAN No">
+          </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="email">Email *</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Add email address">
+        </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="phone-number">Phone Number *</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="phone-number" type="tel" placeholder="+91">
+        </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="loan-amount">Add Loan Amount *</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="loan-amount" type="text" placeholder="INR">
+        </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="loan-type">Select Loan Type *</label>
+          <select class="shadow border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-600 leading-tight focus:outline-none focus:shadow-outline" id="loan-type">
+            <option>Select Loan</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="loan-duration">Select Duration *</label>
+          <select class="shadow border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-600 leading-tight focus:outline-none focus:shadow-outline" id="loan-duration">
+            <option>Select Loan Duration</option>
+          </select>
+        </div>
+        <div class="mb-4 col-span-2">
+          <label class="block text-zinc-700 dark:text-zinc-300 text-sm font-bold mb-2" for="additional-note">Additional Note and Attach Document *</label>
+          <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 dark:text-zinc-300 leading-tight focus:outline-none focus:shadow-outline" id="additional-note" rows="4" placeholder="bablabla"></textarea>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            Cancel
+          </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+          Save
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="bg-gray-900 text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 <b>RapidCredit.</b> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

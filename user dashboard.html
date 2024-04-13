@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+ 
+
+</head>
+<body>
+<nav class="bg-white">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center space-x-2">
+          
+          <span class="text-black text-xl font-bold">
+            <i>RapidCredit</i>
+        </span>
+        </a>
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-black px-3 py-2 hover:text-gray-200">Dashboards</a>
+                <a href="#" class="text-black px-3 py-2 hover:text-gray-200">Loan Applications</a> 
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="min-h-screen bg-zinc-100 dark:bg-zinc-800">
+    <div class="container mx-auto py-8 px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+        <div
+          class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4 flex items-center justify-between"
+        >
+          <div>
+            <div class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Approved Loans</div>
+            <div class="text-3xl font-bold text-zinc-800 dark:text-white">1</div>
+          </div>
+          <button
+            class="text-blue-500 bg-blue-100 dark:bg-blue-900 dark:text-blue-200 rounded-full p-3"
+          >
+            <span class="sr-only">Approved Loans</span>
+            📈
+          </button>
+        </div>
+  
+        <div
+          class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4 flex items-center justify-between"
+        >
+          <div>
+            <div class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Pending Requests</div>
+            <div class="text-3xl font-bold text-zinc-800 dark:text-white">0</div>
+          </div>
+          <button
+            class="text-blue-500 bg-blue-100 dark:bg-blue-900 dark:text-blue-200 rounded-full p-3"
+          >
+            <span class="sr-only">Pending Requests</span>
+            🕒
+          </button>
+        </div>
+  
+        <div
+          class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4 flex items-center justify-between"
+        >
+          <div>
+            <div class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Rejected Loans</div>
+            <div class="text-3xl font-bold text-zinc-800 dark:text-white">3</div>
+          </div>
+          <button
+            class="text-blue-500 bg-blue-100 dark:bg-blue-900 dark:text-blue-200 rounded-full p-3"
+          >
+            <span class="sr-only">Rejected Loans</span>
+            🚫
+          </button>
+        </div>
+      </div>
+  
+      <div class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4">
+        <div class="flex justify-between items-center pb-4">
+          <div>
+            <h2 class="text-xl font-semibold text-zinc-800 dark:text-white">Borrowers</h2>
+          </div>
+          <button
+            class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          >
+            Add New Borrower
+          </button>
+        </div>
+        <div class="mb-4">
+          <input
+            type="text"
+            placeholder="Search by name and email address"
+            class="w-full p-2 border border-zinc-300 rounded-md"
+          />
+        </div>
+        <div class="overflow-x-auto">
+          <table class="min-w-full">
+            <thead class="bg-zinc-50 dark:bg-zinc-600">
+              <tr>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-zinc-500 dark:text-zinc-300 uppercase tracking-wider"
+                >
+                  ID
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-zinc-500 dark:text-zinc-300 uppercase tracking-wider"
+                >
+                  Name
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-zinc-500 dark:text-zinc-300 uppercase tracking-wider"
+                >
+                  Loan Type
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-zinc-500 dark:text-zinc-300 uppercase tracking-wider"
+                >
+                  Loan Request
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white dark:bg-zinc-700 divide-y divide-zinc-200 dark:divide-zinc-600">
+              <tr>
+                <td
+                  class="px-6 py-4 whitespace-nowrap text-sm font-medium text-zinc-900 dark:text-white"
+                >
+                  4
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-zinc-500 dark:text-zinc-300">
+                  Miz Zaki
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-zinc-500 dark:text-zinc-300">
+                  Student Loan
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-zinc-500 dark:text-zinc-300">
+                  <button class="text-green-500 hover:text-green-700">✔️</button>
+                  <button class="text-red-500 hover:text-red-700">❌</button>
+                  <button class="text-blue-500 hover:text-blue-700">✏️</button>
+                  <button class="text-zinc-500 hover:text-zinc-700">🗑️</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="py-2">
+          <nav class="block">
+            <ul class="flex pl-0 rounded list-none flex-wrap">
+              <li>
+                <button
+                  class="text-zinc-500 bg-white dark:bg-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-600 text-sm font-semibold py-2 px-4 rounded-l"
+                >
+                  Previous
+                </button>
+              </li>
+              <li>
+                <button
+                  class="text-zinc-700 bg-white dark:bg-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-600 text-sm font-semibold py-2 px-4"
+                >
+                  1
+                </button>
+              </li>
+              <li>
+                <button
+                  class="text-zinc-500 bg-white dark:bg-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-600 text-sm font-semibold py-2 px-4 rounded-r"
+                >
+                  Next
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 <b>RapidCredit.</b> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

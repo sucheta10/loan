@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+ 
+</head>
+<body>
+<nav class="bg-white">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center space-x-2">
+          
+          <span class="text-black text-xl font-bold">
+            <i>RapidCredit</i>
+        </span>
+        </a>
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-black px-3 py-2 hover:text-gray-200">Dashboards</a>
+                <a href="#" class="text-black px-3 py-2 hover:text-gray-200">Borrower Details</a>
+                <a href="#" class="text-black px-3 py-2 hover:text-gray-200">Loan Request</a> 
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="min-h-screen bg-zinc-100 dark:bg-zinc-800 py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div
+          class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4 flex items-center justify-between"
+        >
+          <div>
+            <div class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Approved Loans</div>
+            <div class="text-3xl font-bold text-zinc-800 dark:text-white">7</div>
+          </div>
+          <div class="text-blue-500 text-5xl">📈</div>
+        </div>
+  
+        <div
+          class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4 flex items-center justify-between"
+        >
+          <div>
+            <div class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Pending Requests</div>
+            <div class="text-3xl font-bold text-zinc-800 dark:text-white">7</div>
+          </div>
+          <div class="text-blue-500 text-5xl">🕒</div>
+        </div>
+  
+        <div
+          class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4 flex items-center justify-between"
+        >
+          <div>
+            <div class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Rejected Loans</div>
+            <div class="text-3xl font-bold text-zinc-800 dark:text-white">7</div>
+          </div>
+          <div class="text-blue-500 text-5xl">🚫</div>
+        </div>
+  
+        <div
+          class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4 flex items-center justify-between"
+        >
+          <div>
+            <div class="text-sm font-semibold text-zinc-500 dark:text-zinc-400">New Borrowers</div>
+            <div class="text-3xl font-bold text-zinc-800 dark:text-white">75%</div>
+          </div>
+          <div class="text-green-500 text-5xl">👤</div>
+        </div>
+      </div>
+  
+      <div class="bg-white dark:bg-zinc-700 shadow rounded-lg p-4">
+        <div class="flex justify-between items-center pb-4">
+          <div>
+            <input
+              type="text"
+              placeholder="Search by name and email address"
+              class="px-4 py-2 border rounded-lg text-zinc-700 dark:text-zinc-300 dark:border-zinc-600 focus:outline-none focus:border-blue-500"
+            />
+          </div>
+          <div>
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+              Add New Borrower
+            </button>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-sm divide-y divide-zinc-200 dark:divide-zinc-600">
+            <thead>
+              <tr class="text-left text-zinc-500 dark:text-zinc-400">
+                <th class="px-6 py-3">ID</th>
+                <th class="px-6 py-3">Name</th>
+                <th class="px-6 py-3">Email</th>
+                <th class="px-6 py-3">Loan Request</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-zinc-200 dark:divide-zinc-600">
+              <tr class="bg-white dark:bg-zinc-700">
+                <td class="px-6 py-4">7</td>
+                <td class="px-6 py-4">Mior Zati</td>
+                <td class="px-6 py-4">mior@nova.laravel.com</td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <div class="h-4 w-4 bg-green-500 rounded-full mr-2"></div>
+                    <div class="h-4 w-4 bg-yellow-500 rounded-full mr-2"></div>
+                    <div class="h-4 w-4 bg-red-500 rounded-full mr-2"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex justify-between items-center pt-4">
+          <div>
+            <button class="text-sm text-zinc-500 dark:text-zinc-400 hover:underline">Previous</button>
+          </div>
+          <div>
+            <span class="text-sm text-zinc-500 dark:text-zinc-400">1 of 7</span>
+          </div>
+          <div>
+            <button class="text-sm text-zinc-500 dark:text-zinc-400 hover:underline">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 <b>RapidCredit.</b> All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
